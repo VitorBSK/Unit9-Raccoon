@@ -1,0 +1,8 @@
+<svg width="120" height="32" viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="32" rx="8" fill="#050816"/>
+  <circle cx="16" cy="16" r="8" fill="#16a34a"/>
+  <path d="M12 18 L16 10 L20 18 Z" fill="#ecfeff"/>
+  <text x="32" y="20" fill="#e5e7eb" font-family="system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="14">
+    Unit09 Dashboard
+  </text>
+</svg>
