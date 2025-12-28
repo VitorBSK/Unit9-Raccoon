@@ -1,0 +1,26 @@
+{
+  "name": "@unit09/core-engine",
+  "version": "0.1.0",
+  "description": "Core pipeline engine for the Unit09 on-chain AI raccoon system.",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@unit09/shared-types": "0.1.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "unit09",
+    "solana",
+    "pipeline",
+    "code-analysis"
+  ]
+}
