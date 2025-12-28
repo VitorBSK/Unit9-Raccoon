@@ -1,0 +1,28 @@
+# Production environment configuration
+
+app:
+  env: production
+  port: 8080
+  logLevel: warn
+
+solana:
+  cluster: https://api.mainnet-beta.solana.com
+  commitment: finalized
+
+security:
+  allowedOrigins:
+    - "https://unit09.org"
+    - "https://app.unit09.org"
+  enableRateLimit: true
+  maxRequestsPerMinute: 150
+
+database:
+  host: prod-db.internal
+  port: 5432
+  user: prod_user
+  password: "***REDACTED***"
+  name: unit09_prod
+
+metrics:
+  enable: true
+  pushGatewayUrl: https://metrics.unit09.org/push
