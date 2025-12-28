@@ -1,0 +1,31 @@
+{
+  "name": "@unit09/testing-utils",
+  "version": "0.1.0",
+  "description": "Testing utilities for Unit09, including localnet helpers and fixtures.",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.0",
+    "@coral-xyz/anchor": "^0.29.0"
+  },
+  "peerDependencies": {
+    "@solana/web3.js": "^1.95.0",
+    "@coral-xyz/anchor": "^0.29.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "solana",
+    "testing",
+    "localnet",
+    "unit09"
+  ]
+}

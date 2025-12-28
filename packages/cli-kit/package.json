@@ -1,0 +1,23 @@
+{
+  "name": "@unit09/cli-kit",
+  "version": "0.1.0",
+  "description": "Small CLI utility toolkit used by Unit09 tools.",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {},
+  "license": "MIT",
+  "keywords": [
+    "cli",
+    "unit09",
+    "toolkit"
+  ]
+}
