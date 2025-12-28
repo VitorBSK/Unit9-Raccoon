@@ -1,0 +1,44 @@
+# Default configuration shared across environments
+
+app:
+  name: unit09
+  env: default
+  logLevel: info
+  port: 8080
+
+solana:
+  cluster: https://api.mainnet-beta.solana.com
+  commitment: confirmed
+
+pipeline:
+  observeIntervalSeconds: 3600
+  maxConcurrentJobs: 5
+  maxRepoSizeMB: 200
+  supportedLanguages:
+    - rust
+    - typescript
+    - javascript
+    - markdown
+
+security:
+  allowedOrigins:
+    - "*"
+  enableRateLimit: true
+  maxRequestsPerMinute: 300
+
+storage:
+  bucket: "unit09-storage"
+  region: "us-east-1"
+  provider: "s3"
+
+metrics:
+  enable: true
+  pushGatewayUrl: http://localhost:9091
+
+database:
+  type: postgres
+  host: localhost
+  port: 5432
+  user: unit09
+  password: change_me
+  name: unit09_db
