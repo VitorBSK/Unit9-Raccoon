@@ -1,0 +1,133 @@
+# ====================================================================================
+# Cargo workspace manifest for Unit09 on-chain program
+# Path: contracts/unit09-program/Cargo.toml
+#
+# This file defines:
+# - Workspace members and shared configuration
+# - Common dependencies and versions
+# - Build profiles for dev / release / test / bench
+# - Optional patches for Solana crates (if you want to pin versions)
+# ====================================================================================
+
+[workspace]
+members = [
+  "programs/unit09_program",
+]
+
+# Use the modern resolver to avoid unwanted feature unification across crates
+resolver = "2"
+
+# ------------------------------------------------------------------------------------
+# Shared package metadata (applies to workspace members that do not override these)
+# ------------------------------------------------------------------------------------
+[workspace.package]
+edition    = "2021"
+version    = "0.1.0"
+license    = "Apache-2.0"
+authors    = ["Unit09 Labs <team@unit09.org>"]
+homepage   = "https://unit09.org/"
+repository = "https://github.com/unit09/unit09-program"
+description = "Unit09 – On-chain evolving AI raccoon that consumes code and produces modules."
+readme     = "README.md"
+keywords   = ["solana", "anchor", "ai", "modules", "protocol"]
+categories = ["cryptography::cryptocurrencies", "development-tools"]
+
+# ------------------------------------------------------------------------------------
+# Workspace-wide dependencies
+# These will be inherited by members unless they specify their own versions.
+# ------------------------------------------------------------------------------------
+[workspace.dependencies]
+anchor-lang = { version = "0.30.1", features = ["init-if-needed"] }
+anchor-spl  = "0.30.1"
+
+solana-program = "2.0.3"
+solana-sdk     = "2.0.3"
+
+borsh         = "1.5"
+thiserror     = "1.0"
+serde         = { version = "1.0", features = ["derive"] }
+serde_json    = "1.0"
+
+# Optional utilities you may use in the program if needed
+bytemuck      = { version = "1.15", features = ["derive"] }
+num-traits    = "0.2"
+num-derive    = "0.4"
+
+# ------------------------------------------------------------------------------------
+# Build Profiles
+# - dev: used by `cargo build`
+# - release: used by `cargo build --release` (used by Anchor for deployment)
+# - test: used by `cargo test` and `anchor test`
+# - bench: optional, for micro-benchmarks
+# ------------------------------------------------------------------------------------
+
+[profile.dev]
+opt-level = 1
+debug = true
+debug-assertions = true
+overflow-checks = true
+lto = "off"
+incremental = true
+codegen-units = 256
+
+[profile.release]
+opt-level = "z"
+debug = false
+debug-assertions = false
+overflow-checks = true
+lto = "fat"
+incremental = false
+codegen-units = 1
+panic = "abort"
+strip = "symbols"
+
+[profile.test]
+opt-level = 1
+debug = true
+debug-assertions = true
+overflow-checks = true
+lto = "off"
+incremental = true
+codegen-units = 256
+panic = "abort"
+
+[profile.bench]
+opt-level = 3
+debug = false
+debug-assertions = false
+overflow-checks = true
+lto = "fat"
+incremental = false
+codegen-units = 1
+panic = "abort"
+
+# ------------------------------------------------------------------------------------
+# Optional patch section
+# Use this if you want to pin or override Solana / Anchor crates
+# ------------------------------------------------------------------------------------
+# [patch.crates-io]
+# solana-program = { git = "https://github.com/solana-labs/solana", tag = "v2.0.3" }
+# solana-sdk     = { git = "https://github.com/solana-labs/solana", tag = "v2.0.3" }
+
+# ------------------------------------------------------------------------------------
+# Workspace metadata (can be used by tooling / CI)
+# ------------------------------------------------------------------------------------
+[workspace.metadata.unit09]
+project_name        = "Unit09"
+program_crate       = "unit09_program"
+primary_program_id  = "UNIT9mB7Z2F8cUXa11111111111111111111111111"
+default_cluster     = "localnet"
+documentation_url   = "https://docs.unit09.org/"
+explorer_base_local = "http://localhost:8899"
+
+[workspace.metadata.ci]
+# CI tools can read this block to know how to build and test
+build_command       = "anchor build"
+test_command        = "anchor test"
+lint_command        = "cargo clippy --all-targets --all-features -- -D warnings"
+fmt_command         = "cargo fmt --all"
+
+[workspace.metadata.security]
+contact_email       = "security@unit09.org"
+advisory_policy_url = "https://unit09.org/security"
+
