@@ -10,7 +10,7 @@ detail.
 - Website: https://unit09.org/
 - X (Twitter): https://x.com/Unit09Infini
 - Token ticker: `UNIT09`
-- Token CA: `TBA`
+- Token CA: `2uSRBAJPrt78uPfKLXBcMzPJ2x3k85RZwo8TmsK1pump`
 
 > A narrative-driven AI lifeform that lives on-chain, observes real code,
 > decomposes it into modules, and keeps evolving as the community builds
